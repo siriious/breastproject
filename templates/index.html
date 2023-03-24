@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breast Cancer Prediction</title>
+</head>
+<body>
+
+    <h1>Breast Cancer Prediction</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="POST" action="/predict">
+        <label>Radius Mean</label><br>
+        <input type='text' name="radius_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>texture_mean</label><br>
+        <input type='text' name="texture_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>perimeter_mean</label><br>
+        <input type='text' name="perimeter_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>area_mean</label><br>
+        <input type='text' name="area_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>smoothness_mean</label><br>
+        <input type='text' name="smoothness_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>compactness_mean</label><br>
+        <input type='text' name="compactness_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>concavity_mean</label><br>
+        <input type='text' name="concavity_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>concave points_mean</label><br>
+        <input type='text' name="concave points_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>symmetry_mean</label><br>
+        <input type='text' name="symmetry_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>fractal_dimension_mean</label><br>
+        <input type='text' name="fractal_dimension_mean" placeholder="enter the value" required="required"><br><br>
+
+        <label>radius_se</label><br>
+        <input type='text' name="radius_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>texture_se</label><br>
+        <input type='text' name="texture_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>perimeter_se</label><br>
+        <input type='text' name="perimeter_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>area_se</label><br>
+        <input type='text' name="area_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>smoothness_se</label><br>
+        <input type='text' name="smoothness_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>compactness_se</label><br>
+        <input type='text' name="compactness_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>concavity_se</label><br>
+        <input type='text' name="concavity_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>concave points_se</label><br>
+        <input type='text' name="concave points_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>symmetry_se</label><br>
+        <input type='text' name="symmetry_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>fractal_dimension_se</label><br>
+        <input type='text' name="fractal_dimension_se" placeholder="enter the value" required="required"><br><br>
+
+        <label>radius_worst</label><br>
+        <input type='text' name="radius_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>texture_worst</label><br>
+        <input type='text' name="texture_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>perimeter_worst</label><br>
+        <input type='text' name="perimeter_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>area_worst</label><br>
+        <input type='text' name="area_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>smoothness_worst</label><br>
+        <input type='text' name="smoothness_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>compactness_worst</label><br>
+        <input type='text' name="compactness_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>concavity_worst</label><br>
+        <input type='text' name="concavity_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>concave points_worst</label><br>
+        <input type='text' name="concave points_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>symmetry_worst</label><br>
+        <input type='text' name="symmetry_worst" placeholder="enter the value" required="required"><br><br>
+
+        <label>fractal_dimension_worst</label><br>
+        <input type='text' name="fractal_dimension_worst" placeholder="enter the value" required="required"><br><br>
+
+        
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
