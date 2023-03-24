@@ -22,9 +22,6 @@ def predict():
         
     else:
         return "<h1 style='color:red'>The Female is Suffering From = Benign Type of Breast Cancer</h1>"
-    
-if __name__=="__main__":
-    app.run(debug=True)
 
 
-    # "<h1 style='color:red'>The Predicted Variety is = Versicolor</h1>"
+
